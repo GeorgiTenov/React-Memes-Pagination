@@ -1,0 +1,104 @@
+body{
+    text-align: center;
+    justify-content: center;
+}
+
+/*container-memes*/
+.container-memes{
+    background-color: rgb(35, 49, 45);
+    margin:0 auto;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+    list-style: none;
+}
+
+.container-memes li img{
+    width:400px;
+    height:400px;
+    border: 2px solid white;
+    box-shadow:2px 2px 2px 2px rgb(59, 57, 53);
+    border-radius: 10%;
+    margin:10px;
+}
+
+.container-memes li img:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.container-memes h1{
+    background-color: orangered;
+}
+
+/*container-buttons*/
+
+.container-buttons{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style:none;
+    justify-content:center;
+    text-align: center;
+    background-color: rgb(40, 58, 53);
+}
+
+.container-buttons li button{
+    background-color: black;
+    color: rgb(126, 154, 155);
+    margin:10px;
+    width:40px;
+    height:40px;
+    border:3px solid fuchsia;
+    transition: background-color;
+}
+
+.container-buttons li button:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+}
+
+.main-memes-container{
+    background: rgb(62, 66, 58);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body{
+    background: black;
+}
+
+@media screen and (max-width:500px){
+    .container-memes li img{
+        width:200px;
+        height:200px;
+    }
+    .container-memes{
+        width:100%;
+        justify-content: center;
+        text-align: center;
+        flex-direction: row;
+    }
+    .container-memes li h1{
+        font-size: 10px;
+    }
+
+    .container-buttons{
+        width:60%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        text-align:start;
+        align-items:flex-start;
+    }
+
+    .main-memes-container{
+        overflow-x: hidden;
+    }
+   
+}
